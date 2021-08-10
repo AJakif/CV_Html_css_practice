@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:root{
+    --dark-blue:rgb(32, 56, 100);
+    --lightblue:rgb(86,127,202);
+    --bluewhite:rgb(203, 210, 231);
+    --darkgey:rgb(71, 70, 70);
+    --lightgey:rgb(94, 88, 88);
+    --black:rgb(38,38,38);
+    --white:white;
+}
+
+
+body{
+    padding: 3rem 15rem;
+    background-color: var(--bluewhite);
+    font-family: 'Georama', sans-serif;
+}
+
+.container{
+    align-items: center;
+}
+
+.title{
+    font-size: 0.937rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+
+p{
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.page{
+    margin-top: 2rem;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Page Left */
+
+.page .leftside{
+    
+    width: 40%;
+    padding: 4rem 1.5rem 1.5rem 2rem;
+    background-color: var(--dark-blue);
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    /* border: solid black; */
+}
+
+.page .leftside .imgbox{
+    /* border: solid rgb(255, 0, 0); */
+    padding: 0 0 0 3.8rem;
+}
+
+.page .leftside .imgbox img{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 7rem;
+}
+
+.page .leftside .aboutme{
+    margin: 1.5rem 0 7rem 0;
+    /* border: solid chartreuse; */
+}
+
+/* .page .leftside .contact
+{
+    border: solid red;
+} */
+
+.page .leftside .contact ul{
+    list-style-type: none;
+}
+
+.page .leftside .contact ul li{
+    display: flex;
+    flex-direction: row;
+}
+
+.page .leftside .contact ul p{
+    padding-top: .1rem;
+}
+
+.page .leftside .contact ul li i{
+    /* border: solid black; */
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0rem .5rem 1.3rem 0;
+}
+
+/* Page Right */
+
+.page .rightside{
+    width: 60%;
+    padding: 4rem 1.5rem 1.5rem .8rem;
+    background-color:var(--white) ;
+    /* border: solid black; */
+    color: var(--darkgey);
+}
+
+.page .rightside .title{
+    color: var(--dark-blue);
+    text-align: left;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+}
+
+.page .rightside p{
+    font-size: .85rem;
+    font-weight: 400;
+}
+
+.page .rightside .head{
+    /* border: solid greenyellow; */
+    margin: 2rem 0 3rem 0;
+}
+
+.page .rightside .head .name{
+    /* border: solid brown; */
+    font-size: 2.7rem;
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.page .rightside .head .border{
+    border: solid .10rem var(--dark-blue);
+    width: 22%;
+    margin-left: .3rem;
+    margin-bottom: 1rem;
+}
+
+.page .rightside .head .position{
+    font-size: 1.167rem;
+    color: var(--lightblue);
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+}
+
+.page .rightside .head .softskill ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    border-left: solid .05rem var(--darkgey);
+}
+
+.page .rightside .head .softskill li{
+    font-size: .67rem;
+    border-right: solid .05rem var(--darkgey);
+    padding: 0 .2rem 0 .2rem;
+}
+
+.page .rightside .objective{
+    /* border: solid rgb(92, 10, 243); */
+    margin-bottom: 2rem;
+}
+
+
+.page .rightside .experince{
+    /* border: solid rgb(81, 255, 12); */
+    margin-bottom: 2.2rem;
+}
+
+.page .rightside  .work{
+    /* border: solid blue; */
+    margin-bottom: 1rem;
+}
+
+.page .rightside .work .worktitle{
+    font-size: 1.167rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.page .rightside .experince .work .worktitle span{
+    font-size: .67rem;
+    font-weight: 400;
+    padding: 0rem .2rem;
+    margin-left: .3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--darkgey);
+    border-left: solid .1rem var(--darkgey) ;
+
+}
+
+.page .rightside .info span{
+    margin-left: .3rem;
+    padding-left: .5rem;
+    border-left: solid .1rem var(--darkgey);
+}
+
+.page .rightside  .tasks{
+    /* border: solid rgb(224, 96, 37); */
+    margin-top: .5rem;
+}
+
+.page .rightside  .info .tasks ul{
+    padding-left: 3rem;
+    list-style-position: inside;
+}
+
+.page .rightside  .info .tasks ul li{
+    font-size: .85rem;
+    font-weight: 400;
+    color: var(--lightgey);
+}
+
+/* .page .rightside .education{
+    border: solid rgb(235, 4, 4);
+} */
+
+/* Last Page */
+
+.pagelast{
+    height: 900px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagelast .topside{
+
+    width: 100%;
+    height: 95%;
+    background-color:var(--white) ;
+}
+
+.pagelast .bottomside{
+    width: 100%;
+    height: 5%;
+    background-color: var(--dark-blue);
+}
